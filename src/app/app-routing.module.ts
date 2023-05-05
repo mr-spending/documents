@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'delete-account',
     loadChildren: () => import('./pages/user-deletion/user-deletion.module').then(m => m.UserDeletionModule)
   }
 ];

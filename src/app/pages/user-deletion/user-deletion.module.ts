@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 
 import { UserDeletionComponent } from './user-deletion.component';
 import { UserDeletionRoutingModule } from './user-deletion-routing.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
     UserDeletionComponent
   ],
   imports: [
-    UserDeletionRoutingModule
+    UserDeletionRoutingModule,
+    SharedModule
   ],
   providers: [],
-  bootstrap: [UserDeletionComponent]
+  bootstrap: [
+    UserDeletionComponent
+  ]
 })
 export class UserDeletionModule { }

@@ -1,1 +1,13 @@
-<p>user-deletion works!</p>
+<div class="page-container">
+  <h3>WARNING! Deleting an account is irreversible. After deletion, you will not be able to recover your account and spending data!</h3>
+
+  <form [formGroup]="formGroup">
+    <label for="email">Email</label>
+    <input type="email" formControlName="email" id="email">
+
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" id="password">
+
+    <input type="submit" value="Submit" [disabled]="!formGroup.valid" (click)="$event.stopPropagation(); formSubmit()">
+  </form>
+</div>
