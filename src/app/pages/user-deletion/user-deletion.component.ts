@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { AuthService } from '../../core/services/auth.service';
 
 @Component({
@@ -10,8 +11,7 @@ import { AuthService } from '../../core/services/auth.service';
 export class UserDeletionComponent implements OnInit {
   formGroup!: FormGroup;
 
-  constructor(private fb: FormBuilder, private auth: AuthService) {
-  }
+  constructor(private fb: FormBuilder, private auth: AuthService) { }
 
   ngOnInit() {
     this.formGroup = this.fb.group({

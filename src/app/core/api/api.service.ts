@@ -18,4 +18,8 @@ export class ApiService {
 
     return this.http.delete<any>(this.path + 'user', requestOptions);
   }
+
+  messageToSupport(payload: { title: string, email: string, message: string }): Observable<any> {
+    return this.http.post<any>(this.path + 'documents/massage-to-support', payload);
+  }
 }

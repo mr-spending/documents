@@ -7,4 +7,18 @@
   gap: 30px;
   padding: 15px 0;
   border-bottom: 1px solid #676767;
+
+  div a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+
+    &.active {
+      color: #2e5fff;
+      border: 1px solid #2e5fff;
+      padding: 5px 4px;
+    }
+  }
 }
