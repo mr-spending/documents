@@ -28,7 +28,6 @@ export class SupportComponent implements OnInit {
   formSubmit() {
     this.subscription.add(this.api.messageToSupport(this.formGroup.value).subscribe(resp => {
         this.responseStrings = resp;
-        console.log(this.responseStrings);
         this.subscription.unsubscribe();
       }
     ));
