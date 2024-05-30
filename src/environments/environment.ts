@@ -18,7 +18,7 @@ export const environment = {
     appId: "1:642008186725:web:6a09a0e246432a05a0ab8c",
     measurementId: "G-ZLMGMXP4KF"
   },
-  apiKey: apiEnv.prod,
+  apiKey: apiEnv.local,
 }
 
 /*
